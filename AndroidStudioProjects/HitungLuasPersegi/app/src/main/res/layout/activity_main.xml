@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan panjang sisi"
+        android:layout_alignParentTop="true"
+        android:id="@+id/txtSisi" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editSisi"
+        android:layout_below="@+id/txtSisi"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOk"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editSisi"
+        android:text="Ok!"
+        android:background="@color/Red"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLuas"
+        android:layout_below="@+id/btnOk"
+        android:text="Luas Persegi :"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editHasil"
+        android:layout_below="@+id/txtLuas"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/editSisi"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtKeliling"
+        android:layout_below="@+id/editHasil"
+        android:layout_alignParentStart="true"
+        android:text="Keliling Persegi :"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editKeliling"
+        android:layout_below="@+id/txtKeliling"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

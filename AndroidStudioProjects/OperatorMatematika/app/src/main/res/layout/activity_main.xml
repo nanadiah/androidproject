@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Angka Pertama"
+        android:id="@+id/txtawal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/editawal"
+        android:layout_below="@+id/txtawal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Angka Kedua"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editawal"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/editkedua"
+        android:layout_below="@+id/textView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtoperator"
+        android:layout_below="@+id/editkedua"
+        android:text="Pilih Operator"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btnjumlah"
+        android:layout_above="@+id/txthasil"
+        android:layout_toStartOf="@+id/btnkurang"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/btnkurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtoperator"
+        android:layout_toStartOf="@+id/btnkali"
+        android:text="-" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/btnkali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/btnbagi"
+        android:layout_below="@+id/txtoperator"
+        android:text="x" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/btnbagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txtoperator"
+        android:layout_below="@+id/txtoperator"
+        android:text=":" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:id="@+id/txthasil"
+        android:layout_below="@+id/btnkurang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edithasil"
+        android:layout_below="@+id/txthasil"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
